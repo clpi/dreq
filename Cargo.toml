@@ -1,0 +1,17 @@
+[package]
+name = "dreq"
+version = "0.1.0"
+authors = ["Chris P <chrisp1877@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+# clap = {version = "3.0.0-beta.2"}
+crossterm = "0.18.2"
+tui = {version = "0.13.0", features = ["crossterm"]}
+serde = {version = "1.0.118", features = ["derive"]}
+serde_json = "1.0.60"
+reqwest = "0.10.10"
+chrono = { version = "*", features = ["serde"] }
+
